@@ -1,0 +1,100 @@
+/* Importando uma fonte clássica */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a1a; /* preto elegante */
+  color: #f5f5dc; /* bege claro */
+  font-family: 'Merriweather', serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #2c2c2c;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* brilho dourado */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffd700; /* dourado */
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #f5f5dc;
+}
+
+input.mensagem {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #1a1a1a;
+  color: #f5f5dc;
+  font-size: 1rem;
+}
+
+input.mensagem::placeholder {
+  color: #bbb;
+}
+
+button.botao {
+  background: #ffd700;
+  color: #1a1a1a;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+button.botao:hover {
+  background: #e6c200;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #00ff88; /* verde claro para dar contraste */
+  word-break: break-word;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input.mensagem, button.botao {
+    font-size: 0.9rem;
+  }
+
+  .resultado {
+    font-size: 1rem;
+  }
+}
